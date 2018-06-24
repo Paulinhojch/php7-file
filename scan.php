@@ -14,6 +14,7 @@ foreach ($images as $img) {
 
 		$info["size"] = filesize($filename);
 		$info["modified"] = date("d/m/Y H:i:s", filemtime($filename));
+		$info["url"] = "http://localhost/Projetos/php7-file/".$filename;
 
 		array_push($data, $info);
 
